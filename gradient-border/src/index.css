@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%);
+  grid-area: center;
+  align-self: center;
+  justify-self: center;
+}
+.gradient {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  grid-area: center;
+  background-image: linear-gradient(#6e4aff, #49a16c);
+}
+.btn {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "center";
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+}
+.gradient-border {
+  position: absolute;
+  clip-path: circle(45%);
+  width: 100px;
+  height: 100px;
+  grid-area: center;
+  align-self: center;
+  justify-self: center;
+}
